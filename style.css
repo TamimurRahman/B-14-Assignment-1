@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 nav {
@@ -30,6 +31,7 @@ nav .nav_lists {
   border-radius: 10px;
   font-size: 16px;
   border: none;
+   cursor: pointer;
 }
 
 section {
@@ -95,10 +97,11 @@ section {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 100%;
+  justify-content: center;
 }
 .card-container .card img {
   width: 100%;
-  border-radius:10px ;
+  border-radius: 10px;
 }
 .card-container .card .card-content {
   display: flex;
@@ -122,4 +125,77 @@ section {
   color: rgba(87, 87, 87, 1);
   font-size: 14px;
   font-weight: 400;
+}
+
+/* subscriptions cards */
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 48px;
+}
+
+.subscription-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.subscription-content h1 {
+  font-size: 48px;
+}
+.plans-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  /* margin: 0 auto; */
+  justify-content: center;
+  align-items: center;
+}
+.plan-card {
+  width: 371px;
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  height: 444px;
+}
+.plan-card-price p {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(136, 136, 136, 1);
+}
+hr {
+  border: 1px solid rgba(229, 231, 235, 1);
+}
+.plan-card-price h2 {
+  font-size: 44px;
+}
+.plan-card-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-inline-start: 20px; /* the list indentation not perfectly it not fit in my card so, i need help  from chatgpt to solve this problem*/
+}
+.plan-card-content ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+/* this portion code generate from chatgpt 
+  because i am stuck to color my list bullet point
+  for this reason help from chatgpt.
+*/
+.plan-card-content ul li::marker {
+  color: rgba(37, 99, 235, 1);
+}
+
+.plan-card-content2 ul li {
+  color: rgba(255, 255, 255, 0.8);
 }
