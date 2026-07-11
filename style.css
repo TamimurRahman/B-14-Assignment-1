@@ -240,8 +240,8 @@ hr {
   padding: 20px 0px;
 }
 .corp-card p {
-  font: 13px;
-  weight: 600;
+  font-size: 13px;
+  font-weight: 600;
   color: #64748b;
 }
 .corp-card img {
