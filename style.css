@@ -31,7 +31,7 @@ nav .nav_lists {
   border-radius: 10px;
   font-size: 16px;
   border: none;
-   cursor: pointer;
+  cursor: pointer;
 }
 
 section {
@@ -96,7 +96,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 100%;
+  /* max-width: 100%; */
   justify-content: center;
 }
 .card-container .card img {
@@ -199,56 +199,144 @@ hr {
 .plan-card-content2 ul li {
   color: rgba(255, 255, 255, 0.8);
 }
+/* Special Task Sponsors & Partners */
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 48px;
+}
+
+/* shared style sponsors card */
+.sponsors-heading h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.sponsors-heading p {
+  width: 400px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(87, 87, 87, 1);
+}
+.sponsors-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* width: 1200px; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.corp-card {
+  width: 282px;
+  height: 170px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  padding: 20px 0px;
+}
+.corp-card p {
+  font: 13px;
+  weight: 600;
+  color: #64748b;
+}
+.corp-card img {
+  width: 100%;
+  height: 79%;
+  object-fit: contain;
+}
+
+/* become sponsor */
+.become-sponsor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  Height:132px;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #E2E8F0;
+  background-color: #F8FAFC ;
+}
+.become-sponsor img{
+  width: 64px;
+  height: 64px;
+}
+.become-sponsor-content{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.become-sponsor-text{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.become-sponsor-text h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+.become-sponsor-text p{
+  font-size: 16px;
+  font-weight: 400;
+  Color:#64748B
+}
+
 
 /* footer top portion */
-footer{
+footer {
   background: rgba(13, 27, 42, 1);
   color: white;
-  padding: 56px  60px 32px 60px;
+  padding: 56px 60px 32px 60px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-footer hr{
+footer hr {
   border: 1px solid rgba(255, 255, 255, 0.4);
- 
 }
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer-logo{
+.footer-logo {
   display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.footer-logo img{
+.footer-logo img {
   width: 30px;
   height: 30px;
-
 }
-.footer-logo h2{
+.footer-logo h2 {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.4);
 }
 
-.footer-top .icons{
+.footer-top .icons {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
-.footer-bottom{
+.footer-bottom {
   display: flex;
   justify-content: space-between;
   color: rgba(255, 255, 255, 0.4);
   font-size: 16px;
 }
-.footer-bottom div{
+.footer-bottom div {
   display: flex;
   flex-direction: row;
   gap: 24px;
-
 }
